@@ -32,10 +32,12 @@ def load_grid():
             game.blit(Images.Tile[0], (x, y))
             TilesPos[x,"x",y] = Images.Tile[0]
     pg.display.update()
+    
 # Loading Functions
 load_grid()
 Ant.load(game, Images.Tile[0])
 
+# The main loop where all the other modules are executed. 
 while True:
     AtoTpos = Ant.curpos['x'], "x", Ant.curpos['y']
     if TilesPos[AtoTpos] == Images.Tile[0] or TilesPos[AtoTpos] == Images.Tile[2]:
