@@ -1,5 +1,6 @@
 import pygame as pg
 
+# Creates a class containing all the images used in the game. 
 class Images:
     def __init__(self):
         self.Ant = (pg.image.load("L-Ant1.png"), pg.image.load("L-Ant2.png"), pg.image.load("L-Ant3.png"), pg.image.load("L-Ant4.png"))
